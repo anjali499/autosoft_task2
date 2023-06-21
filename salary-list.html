@@ -1,0 +1,58 @@
+<html>
+  <head>
+	<title>Employee</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+	 
+	<ul type="none" class="sidenav">
+	  <li><h2 align="center">Menu Bar</h2></li>
+	  <li><a href="employee-form.html" >Add Employee</a></li>
+	  <li><a href="salary.html" >Salary</a></li>
+	  <li><a href="employee-list.html" >Employee List</a></li>
+	  <li><a href="salary-list.html" class="active">Salary List</a></li>
+	  <li><a href="signin-page.html" class="Logoutclass">Log Out</a></li>
+	</ul>
+
+	<div class="content">
+	  <h1 align="center">Salary List</h1>
+
+	  <table border="1" id="employee">
+		<thead id="table-head">
+		  <th>SN</th>
+		  <th>Year</th>
+		  <th>Month</th>
+		  <th>Details</th>
+		  <th>Delete</th>
+		</thead>
+
+		<tbody id="table-body">
+			
+		</tbody>
+	  </table>
+	</div>
+
+	<div class="content1">
+	  <h1 align="center">Salary List</h1>
+
+	  <table border="1" id="employeeSalaryDetail">
+		<thead id="tableDetail-head">
+		  <th>SN</th>
+		  <th>First Name</th>
+		  <th>Salary</th>
+		  <th>Allowance</th>
+		  <th>Deduction</th>
+		  <th>Net Salary</th>
+		</thead>
+
+		<tbody id="tableDetail-body">
+			
+		</tbody>
+	  </table>
+	  <input type="submit" onclick="showEmployeeSalaryDetail()" value="Close"></input>
+	</div>
+
+	<script src="salary-list.js"></script>
+  </body>
+</html>
+

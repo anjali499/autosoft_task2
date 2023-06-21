@@ -1,0 +1,90 @@
+<html>
+  <head>
+	<title>Employee</title>
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+  </head>
+  <body>
+	 
+	<ul type = "none" class = "sidenav">
+	  <li><h2 align = "center">Menu Bar</h2></li>
+	  <li><a href = "employee-form.html">Add Employee</a></li>
+	  <li><a href = "salary.html" class="active">Salary</a></li>
+	  <li><a href = "employee-list.html" >Employee List</a></li>
+	  <li><a href = "salary-list.html" >Salary List</a></li>
+	  <li><a href = "signin-page.html" class = "Logoutclass">Log Out</a></li>
+	</ul>
+
+	<div class = "content">
+	  <h1 align = "center">Salary</h1>
+	  <form name = "form1">
+		
+		<label for = "month">For Month: </label>
+		<select id = "month">
+		  <option value = "">Select Month</option>
+		  <option value = "Baisakh">Baisakh</option>
+		  <option value = "Jesth">Jesth</option>
+		  <option value = "Aasadh">Aasadh</option>
+		  <option value = "Shrawan">Shrawan</option>
+		  <option value = "Bhadra">Bhadra</option>
+		  <option value = "Ashoj">Ashoj</option>
+		  <option value = "Karttik">Karttik</option>
+		  <option value = "Mangshir">Mangshir</option>
+		  <option value = "Poush">Poush</option>
+		  <option value = "Magh">Magh</option>
+		  <option value = "Falgun">Falgun</option>
+		  <option value = "Chaitra">Chaitra</option>
+		</select><br>
+
+		<label for = "year">For Year: </label>
+		<select id = "year">
+		  <option value = "">Select Year</option>
+		  <option value = "2070">2070</option>
+		  <option value = "2071">2071</option>
+		  <option value = "2072">2072</option>
+		  <option value = "2073">2073</option>
+		  <option value = "2074">2074</option>
+		  <option value = "2075">2075</option>
+		  <option value = "2076">2076</option>
+		  <option value = "2077">2077</option>
+		  <option value = "2078">2078</option>
+		  <option value = "2079">2079</option>
+		  <option value = "2080">2080</option>
+		  <option value = "2081">2081</option>
+		  <option value = "2082">2082</option>
+		  <option value = "2083">2083</option>
+		  <option value = "2084">2084</option>
+		  <option value = "2085">2085</option>
+		  <option value = "2086">2086</option>
+		  <option value = "2087">2087</option>
+		  <option value = "2088">2088</option>
+		  <option value = "2089">2089</option>
+		  <option value = "2090">2090</option>
+		  <option value = "2091">2091</option>
+		</select><br><br>
+	
+
+		<table border = "1" id = "employee">
+		  <thead id = "table-head">
+			<th>SN</th>
+			<th>Employee</th>
+			<th>Basic Salary</th>
+			<th>Allowance</th>
+			<th>Deduction</th>
+			<th>Net Salary</th>
+		  </thead>
+
+		  <tbody id = "table-body1">
+			
+		  </tbody>
+			
+		</table>
+
+		<input type = "submit" id = "save" value = "Save" onclick = "submitData()">
+
+	  </form>
+	</div>
+
+	<script src = "salary.js"></script>
+  </body>
+</html>
+

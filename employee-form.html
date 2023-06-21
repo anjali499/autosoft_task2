@@ -1,0 +1,61 @@
+<html>
+  <head>
+	<title>Employee</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+	<div>
+	  <ul type="none" class="sidenav">
+		<li><h2 align="center">Menu Bar</h2></li>
+		<li><a href="employee-form.html" class="active">Add Employee</a></li>
+		<li><a href="salary.html" >Salary</a></li>
+		<li><a href="employee-list.html" >Employee List</a></li>
+		<li><a href="salary-list.html" >Salary List</a></li>
+		<li><a href="signin-page.html" class="Logoutclass">Log Out</a></li>
+	  </ul>
+	</div>
+
+	<div class="content employee-form">
+	  <h1 align="center">Employee</h1>
+	  <form name="employeeForm">
+		<label for="firstName">First Name: </label>
+	  <input type="text" id="firstName" onkeyup="validateName()">
+		<span id="employeeFirstName"></span><br>
+
+	  <label for="mobile">Mobile: </label>
+		<input type="text" id="mobile" onkeyup="validateMobile()">
+		<span id="employeeMobile"></span><br>
+
+		<label for="email">Email: </label>
+		<input type="email" id="email" onkeyup="validateEmail()">
+		<span id="employeeEmail"></span><br>
+
+		<label for="address">Address: </label>
+		<input type="textarea" id="address"onkeyup="validateAddress()">
+		<span id="employeeAddress"></span><br>
+
+		<label for="gender">Designation: </label>
+		<select id="designation">
+		  <option id="m">Peon</option>
+		  <option id="f">Accountant</option>
+		  <option id="f">receptionist</option>
+		  <option id="f">manager</option>
+		  <option id="f">CEO</option>
+		</select><span id="employeeDesignationr"></span><br>
+
+		<label for="salary">Basic Salary: </label>
+		<input type="number" id="salary" onkeyup="validateSalary()">
+		<span id="employeeSalary"></span><br>
+
+		<label for="allowance">Allowance: </label>
+		<input type="number" id="allowance" onkeyup="validateAllowance()">
+		<span id="employeeAllowance"></span><br>
+
+		<input type="submit" name="submit" value="Submit" onclick="submitForm()">
+	  </form>
+	</div>
+
+	<script src="employee-form.js"></script>
+  </body>
+</html>
+
